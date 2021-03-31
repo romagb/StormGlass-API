@@ -13,27 +13,27 @@ DEFAULT_LOCATIONS = {
     'Kyiv': {
         'lat': 50.45466,
         'lng': 30.5238,
-        'params': sys.argv[1]
+        'params': ','.join(sys.argv[1:])
     },
     'Lviv': {
         'lat': 49.842957,
         'lng': 24.031111,
-        'params': sys.argv[1]
+        'params': ','.join(sys.argv[1:])
     },
     'Austin': {
         'lat': 30.26666,
         'lng': -97.73333,
-        'params': sys.argv[1]
+        'params': ','.join(sys.argv[1:])
     },
     'New York': {
         'lat': 40.73061,
         'lng': -73.935242,
-        'params': sys.argv[1]
+        'params': ','.join(sys.argv[1:])
     },
     'Paris': {
         'lat': 48.86471,
         'lng': 2.34901,
-        'params': sys.argv[1]
+        'params': ','.join(sys.argv[1:])
     }
 }
 
@@ -85,7 +85,7 @@ for link in url_list:
     d = agent.request(
         'GET',
         link,
-        Headers({'Authorization': ['8d8789f0-8db4-11eb-a9f7-0242ac130002-8d878a68-8db4-11eb-a9f7-0242ac130002']}),
+        Headers({'Authorization': ['a14f509c-9211-11eb-a242-0242ac130002-a14f511e-9211-11eb-a242-0242ac130002']}),
         None)
     d.addCallback(cbRequest)
 
