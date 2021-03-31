@@ -6,7 +6,7 @@ Twisted agent script for StromGlass API requests.
 
 > cd StormGlass-API
 
-> python stormglass_req.py `parameter for request`, F.E.: `airTemperature`
+> python stormglass_req.py `parameters for request`, F.E.: `airTemperature pressure`
 
 By default this script returns data for 5 cities:
 * Kyiv
@@ -16,4 +16,3 @@ By default this script returns data for 5 cities:
 * New York
 
 If you want to get data for any other point, you should change `lattitude` and `longitude` in `stormglass_req.py` file for particular city.
-
