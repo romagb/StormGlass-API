@@ -15,4 +15,4 @@ By default this script returns data for 5 cities:
 * Austin
 * New York
 
-If you want to get data for any other point, you should change `lattitude` and `longitude` in `stormglass_req.py` file for particular city.
+If you want to get data for any other point, you should change `lattitude` and `longitude` in `stormglass_req.py` or `stormglassReq_gen.py` file for particular city.
