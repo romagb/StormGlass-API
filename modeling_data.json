@@ -1,0 +1,61 @@
+{
+  "end": "2021-04-14 00:00", 
+  "start": "2021-04-04 00:00", 
+  "cost": 1, 
+  "params": [
+    "airTemperature", 
+    "pressure"
+  ], 
+  "dailyQuota": 50, 
+  "lat": 30.26666, 
+  "requestCount": 27, 
+  "lng": -97.73333
+}{
+  "end": "2021-04-14 00:00", 
+  "start": "2021-04-04 00:00", 
+  "cost": 1, 
+  "params": [
+    "airTemperature", 
+    "pressure"
+  ], 
+  "dailyQuota": 50, 
+  "lat": 49.842957, 
+  "requestCount": 28, 
+  "lng": 24.031111
+}{
+  "end": "2021-04-14 00:00", 
+  "start": "2021-04-04 00:00", 
+  "cost": 1, 
+  "params": [
+    "airTemperature", 
+    "pressure"
+  ], 
+  "dailyQuota": 50, 
+  "lat": 40.73061, 
+  "requestCount": 30, 
+  "lng": -73.935242
+}{
+  "end": "2021-04-14 00:00", 
+  "start": "2021-04-04 00:00", 
+  "cost": 1, 
+  "params": [
+    "airTemperature", 
+    "pressure"
+  ], 
+  "dailyQuota": 50, 
+  "lat": 50.45466, 
+  "requestCount": 29, 
+  "lng": 30.5238
+}{
+  "end": "2021-04-14 00:00", 
+  "start": "2021-04-04 00:00", 
+  "cost": 1, 
+  "params": [
+    "airTemperature", 
+    "pressure"
+  ], 
+  "dailyQuota": 50, 
+  "lat": 48.86471, 
+  "requestCount": 31, 
+  "lng": 2.34901
+}
