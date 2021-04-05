@@ -1,7 +1,7 @@
 import json
 import sys
 from twisted.internet import reactor
-from twisted.internet.defer import inlineCallbacks
+from twisted.internet.defer import inlineCallbacks, DeferredList
 from twisted.web.client import Agent, readBody
 from twisted.web.http_headers import Headers
 import urlparse
@@ -89,17 +89,22 @@ def writeJson(f_name, data):
         json.dump(data, fp=data_file, indent=2, encoding='utf-8')
 
 
+def main(tw_agent, urls):
+    deferred_list = []
+    for link in urls:
+        try:
+            deferred_list.append(reply(tw_agent, link))
+        except Exception, exc:
+            print (exc)
+    deferred_exit = DeferredList(deferred_list, consumeErrors=True)
+    deferred_exit.addBoth(lambda exit: reactor.stop())
+
+
 if __name__ == '__main__':
     start_url = 'https://api.stormglass.io/v2/weather/point'
     agent = Agent(reactor)
     url_list = []
     for key in DEFAULT_LOCATIONS:
         url_list.append(linkGenerator(start_url, DEFAULT_LOCATIONS[key]))
-
-    for link in url_list:
-        try:
-            reply(agent, link)
-        except Exception, exc:
-            print (exc)
-
+    main(agent, url_list)
     reactor.run()
